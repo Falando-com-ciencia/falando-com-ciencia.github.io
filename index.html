@@ -210,19 +210,9 @@
   }
 </script>
                 </div>	
-                <div class="col-md-4 col-sm-6">
+<div class="col-md-4 col-sm-6">
                     <figure>
-                        <img src="../img/portfolio/gray.jpg" alt="foto">
-                        <figcaption>
-                            <h3>Nome</h3>
-                            <span>Palestrante</span>
-                            <a href="../portfolio-item.html">Assista</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <figure>
-                        <img src="../img/portfolio/gray.jpg" alt="foto">
+                        <div id="ytplayer2"></div>
                         <figcaption>
                             <h3>Nome</h3>
                             <span>Palestrante</span>
@@ -231,10 +221,50 @@
                     </figure>
                 </div>
 
-            </ul>
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer2', {
+      videoId: 'N775KsWQVkw&t=1s'
+    });
+  }
+</script>
+                </div>	<div class="col-md-4 col-sm-6">
+                    <figure>
+                        <div id="ytplayer3"></div>
+                        <figcaption>
+                            <h3>Nome</h3>
+                            <span>Palestrante</span>
+                            <a href="../portfolio-item.html">Assista</a>
+                        </figcaption>
+                    </figure>
                 </div>
-            </div>
-        </div>
+
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer3', {
+      videoId: 'N775KsWQVkw&t=1s'
+    });
+  }
+</script>
+                </div>	
         <hr>
 
     <div class="footer">
