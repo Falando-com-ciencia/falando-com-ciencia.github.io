@@ -181,8 +181,16 @@
         
         
         <ul class="grid cs-style-3">
-            <div >
-                    <div class="col-md-4 col-sm-6" id="ytplayer"></div>
+            <div>
+                <div class="col-md-4 col-sm-6"><figure>
+                        <img id="ytplayer">
+                        <figcaption>
+                            <h3>Nome</h3>
+                            <span>Palestrante</span>
+                            <a href="../portfolio-item.html">Assista</a>
+                        </figcaption>
+                    </figure>
+                </div>
 
 <script>
   // Load the IFrame Player API code asynchronously.
@@ -196,7 +204,6 @@
   var player;
   function onYouTubePlayerAPIReady() {
     player = new YT.Player('ytplayer', {
-     
       videoId: 'N775KsWQVkw&t=1s'
     });
   }
