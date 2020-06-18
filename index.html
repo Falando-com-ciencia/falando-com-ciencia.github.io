@@ -175,22 +175,33 @@
         <div class="container">
             <div class="row">
         
-            <div class="section-title">
+           <div class="section-title">
             <h1>Publicações recentes</h1>
             </div>
         
         
         <ul class="grid cs-style-3">
-         <div class="col-md-4 col-sm-6">
-                    <figure>
-                        <img src="../img/portfolio/gray.jpg" alt="foto">
-                        <figcaption>
-                            <h3>Nome</h3>
-                            <span>Palestrante</span>
-                            <a href="../portfolio-item.html">Assista</a>
-                        </figcaption>
-                    </figure>
-                </div>
+            <div >
+                    <div class="col-md-4 col-sm-6" id="ytplayer"></div>
+
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+     
+      videoId: 'N775KsWQVkw'
+    });
+  }
+</script>
+                </div>	
                 <div class="col-md-4 col-sm-6">
                     <figure>
                         <img src="../img/portfolio/gray.jpg" alt="foto">
