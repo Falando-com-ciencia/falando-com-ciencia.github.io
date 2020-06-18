@@ -177,12 +177,9 @@
         
            <div class="section-title">
             <h1>Publicações recentes</h1>
-            </div>
-        
-        
+            </div>      
         <ul class="grid cs-style-3">
-            <div>
-            
+            <div>           
                 </div>	<div class="col-md-4 col-sm-6">
                     <figure>
                         <div id="ytplayer3"></div>
@@ -193,24 +190,15 @@
                         </figcaption>
                     </figure>
                 </div>
-
-<script>
-  // Load the IFrame Player API code asynchronously.
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/player_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-  // Replace the 'ytplayer' element with an <iframe> and
-  // YouTube player after the API code downloads.
-  var player;
-  function onYouTubePlayerAPIReady() {
-    player = new YT.Player('ytplayer3', {
-      videoId: 'YadlBr6EaN4'
-    });
-  }
-</script>
-                </div>	
+            <script>
+              var tag = document.createElement('script');
+              tag.src = "https://www.youtube.com/player_api";
+              var firstScriptTag = document.getElementsByTagName('script')[0];
+              firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+              var player;
+              function onYouTubePlayerAPIReady() {player = new YT.Player('ytplayer3', {videoId: 'YadlBr6EaN4'});}
+            </script>
+          </div>	
         <hr>
 
     <div class="footer">
